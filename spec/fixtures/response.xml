@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetCursOnDateResponse xmlns="http://web.cbr.ru/">
+            <GetCursOnDateResult>
+                <xs:schema id="ValuteData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+                    <xs:element name="ValuteData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:OnDate="20160526">
+                        <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="ValuteCursOnDate">
+                                    <xs:complexType>
+                                        <xs:sequence><xs:element name="Vname" type="xs:string" minOccurs="0"/><xs:element name="Vnom" type="xs:decimal" minOccurs="0"/><xs:element name="Vcurs" type="xs:decimal" minOccurs="0"/><xs:element name="Vcode" type="xs:int" minOccurs="0"/><xs:element name="VchCode" type="xs:string" minOccurs="0"/></xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                    <ValuteData xmlns="">
+                        <ValuteCursOnDate diffgr:id="ValuteCursOnDate10" msdata:rowOrder="9">
+                            <Vname>Доллар США</Vname>
+                            <Vnom>1</Vnom>
+                            <Vcurs>65.8949</Vcurs>
+                            <Vcode>840</Vcode>
+                            <VchCode>USD</VchCode>
+                        </ValuteCursOnDate>
+                        <ValuteCursOnDate diffgr:id="ValuteCursOnDate11" msdata:rowOrder="10">
+                            <Vname>Евро</Vname>
+                            <Vnom>1</Vnom>
+                            <Vcurs>73.4596</Vcurs>
+                            <Vcode>978</Vcode>
+                            <VchCode>EUR</VchCode>
+                        </ValuteCursOnDate>
+                    </ValuteData>
+                </diffgr:diffgram>
+            </GetCursOnDateResult>
+        </GetCursOnDateResponse>
+    </soap:Body>
+</soap:Envelope>
