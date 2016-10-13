@@ -12,12 +12,10 @@ class Money
         private
 
         def exchange_rates
-          @rub_exchange_rates ||= begin
-            fetch_exchange_rates.each_with_object('RUB' => 1) do |rate, h|
-              next unless local_currencies.include? rate[:vch_code]
-              h[rate[:vch_code]] =
-                BigDecimal.new(rate[:vnom]) / BigDecimal.new(rate[:vcurs])
-            end
+          fetch_exchange_rates.each_with_object('RUB' => 1) do |rate, h|
+            next unless local_currencies.include? rate[:vch_code]
+            h[rate[:vch_code]] =
+              BigDecimal.new(rate[:vnom]) / BigDecimal.new(rate[:vcurs])
           end
         end
 
