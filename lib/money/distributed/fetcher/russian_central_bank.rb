@@ -5,7 +5,9 @@ class Money
   module Distributed
     module Fetcher
       # Russian Central Bank rates fetcher
-      class RussianCentralBank < Base
+      class RussianCentralBank
+        include Base
+
         CBR_SERVICE_URL =
           'http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx?WSDL'.freeze
 
