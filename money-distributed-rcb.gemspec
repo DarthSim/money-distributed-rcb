@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['DarthSim']
   spec.email         = ['darthsim@gmail.com']
 
-  spec.summary       = 'Currencylayer fetcher for money-distributed gem'
-  spec.homepage      = 'https://github.com/DarthSim/money-distributed-currencylayer'
+  spec.summary       = 'Russian Central Bank fetcher for money-distributed gem'
+  spec.homepage      = 'https://github.com/DarthSim/money-distributed-rcb'
   spec.license       = 'MIT'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
