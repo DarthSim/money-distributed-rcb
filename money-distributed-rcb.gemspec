@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'money/distributed/fetcher/russian_central_bank/version'
@@ -27,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'timecop'
   spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'rubocop', '~> 0.44.1'
+  spec.add_development_dependency 'rubocop', '~> 0.49.0'
   # travis installs rack uncompatible with ruby < 2.2.2
   spec.add_development_dependency 'rack', '1.6.4'
 
